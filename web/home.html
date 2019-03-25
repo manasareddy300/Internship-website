@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+               background: rgb(217, 217, 217);
+               font-family: sans-serif;
+               font-size: 20px;
+            }
+            h1,h2,h3{
+                text-align: centre;
+                padding-left: 5%;
+                color: rgb(230, 46, 0);
+            }
+            p{
+                padding: 2%;
+                
+            }
+            img{
+                text-align: center;
+                max-width: 100%;
+                width:auto;
+                height:auto;
+            }
+            .wrapper{
+                margin:0 auto;
+                max-width: 100%;
+                width: 98%;
+                background: rgb(245, 245, 240);
+                border:1px solid #878E63;
+            }
+            #logo{
+                width: 100px;
+                height: 100px;
+            }
+            nav ul{
+                list-style: none;
+                margin: 0;
+                padding-left: 500px;
+            }
+            nav ul li{
+                float:left;
+                border:1px solid rgb(230, 46, 0);
+                width:15%;
+            }
+            nav ul li a{
+                background: rgb(0, 0, 0);
+                display: block;
+                padding: 10% 1%;
+                font-weight: bold;
+                font-size: 18px;
+                color:rgb(230, 172, 0);
+                text-decoration: none;
+                text-align: center;
+            }
+            nav ul li a:hover, nav ul li .active a{
+                background-color:rgb(230, 172, 0) ;
+                color:rgb(0, 0, 0) ;
+            }
+            .left-col{
+                width: 55%;
+                float: left;
+                margin: -2% 1% 1% 1%;
+            }
+            .sidebar{
+                width:40%;
+                float: right;
+                margin:1%;
+                text-align: center;
+            }
+            .section{
+                width: 29%;
+                float: left;
+                margin: 2% 2%;
+                text-align: centre;
+            }
+            .container{
+                width:1500px;
+                overflow: hidden;
+            }
+            .banner{
+                position: relative;
+                width: 3000px;
+                
+                animation: mymove 10s infinite;
+              
+            }
+            .banner img{
+                float:right;
+            }
+           /* Safari 4.0 - 8.0 */
+           
+
+/* Standard syntax */
+            @keyframes mymove {
+               from {right: 0px;}
+                 to {right: 1500px;}
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <a href="images/logo.png"><center><img id="logo" src="images/logo.png" alt="internship" title="internship"/></center></a> 
+                 <h1 style="font-size:100px;font-family: chiller;text-align: center;" >INTERNSHIP</h1>
+            </header>
+           
+            <nav>
+                <ul>
+                   <li class='active'><a href="home.html">HOME</a></li>
+                   <li><a href="intern.jsp">INTERNSHIPS</a></li> 
+                   <li><a href="resume.html">RESUME</a></li>
+                </ul>
+            </nav>    
+                <div class="container">
+                <div class="banner">
+                    <figure>
+                    <img src="images/home1.jpg"/>  
+                    <img src="images/home3.jpg"/>
+                    <img src="images/home4.png"/>
+                    </figure>
+                </div>
+                </div>
+                <section>
+                    <center><h1 style="font-family: Times Roman">Imagine,Create and Inspire</h1></center>
+                </section>
+                <section class="left-col">
+                    <p style="text-indent:50px;">An internship is on-the-job training for many professional jobs, similar to
+                         an apprenticeship, more often taken up by college and university students during his
+                         undergraduate or master degree in their free time to supplement their formal education
+                         and expose them to the world of work. </p>
+                    <p style="text-indent: 50 px;">Employers too benefit from an internship arrangement as it gives access to interns
+                         with some skills to execute relevant tasks for the employer. Many interns end up with
+                         permanent service with the same organisation in which they are interned. Their worth to
+                         the organisation may be greater than before by the fact that they require modest or less
+                         training.</p>
+                    
+                </section>
+                <aside class="sidebar">
+                    <div class="inspire">
+                        <img src="images/home2.jpg"/>
+                    </div>
+                </aside>
+                 <div class="section">
+                    <h3>What is an Internship?</h3>
+                    <p>Internship is nothing but a stepping stone to
+                            work environment to an entry level candidate who is looking for a job. Internship
+                            incorporates the experience of working in the field of one’s choice at the time of
+                            completing ones education. So internship is definitely a part of the education process or
+                            done over the summer holidays as vacation training.
+                    </p>
+                </div>
+                 <div class="section">
+                    <h3>Why you should do an internship?</h3>
+                    <p>Because an internship platform aims to :<br>
+                        1)Produce students with technical skills.<br>
+                        2)Develop creative innnovatives with the confidence and courage.<br>
+                        3)Enrich their educational experience and work experience.</p>
+                </div>
+                 <div class="section">
+                    <h3>What are the types of internship?</h3>
+                    <p> 1)Paid internship:There are definite fields of employment that are more likely to have remunerated internships.<br>
+                        2)Unpaid internship:These internship is done voluntarily or to just gain work experience.<br>
+                        3)Internship for credits:On the basis of internship programmed report student get credit for its semester.<br> 
+                        4)Summer internships:These are conducted during thier summer break.</p>
+                </div>
+                
+            </div>
+    </body>
+</html>

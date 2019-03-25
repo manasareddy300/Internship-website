@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             body{
+               background: rgb(217, 217, 217);
+               font-family: sans-serif;
+               font-size: 20px;
+            }
+           
+            h1,h3{
+                text-align: centre;
+                padding-left: 5%;
+                color: rgb(230, 46, 0);
+            }
+             .wrapper{
+                margin:0 auto;
+                max-width: 100%;
+                width: 98%;
+                background: rgb(245, 245, 240);
+                border:1px solid #878E63;
+            }
+             #logo{
+                width: 100px;
+                height: 100px;
+            }
+            nav ul{
+                list-style: none;
+                margin: 0;
+                padding-left: 300px;
+            }
+            nav ul li{
+                float:left;
+                border:1px solid rgb(230, 46, 0);
+                width:25%;
+            }
+            nav ul li a{
+                background: rgb(0, 0, 0);
+                display: block;
+                padding: 5% 12%;
+                font-weight: bold;
+                font-size: 18px;
+                color:rgb(230, 172, 0);
+                text-decoration: none;
+                text-align: center;
+            }
+            nav ul li a:hover, nav ul li .active a{
+                background-color:rgb(230, 172, 0) ;
+                color:rgb(0, 0, 0) ;
+            }
+             </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <a href="images/logo.png"><center><img id="logo" src="images/logo.png" alt="internship" title="internship"/></center></a> 
+                 <h1 style="font-size:100px;font-family: chiller;text-align: center;" >INTERNSHIP</h1>
+            </header>
+           
+            <nav>
+                <ul>
+                   <li class='active'><a href="account.jsp">Account Details</a></li>
+                   <li><a href="comp.jsp">Company Details</a></li> 
+                   <li><a href="adminresume.jsp">Resume Details</a></li>
+                </ul>
+            </nav> <br><br>
+        </div>
+    </body>
+</html>

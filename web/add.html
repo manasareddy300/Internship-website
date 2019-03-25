@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+             body{
+               background: rgb(217, 217, 217);
+               font-family: sans-serif;
+               font-size: 20px;
+            }
+             .res{                                                       
+            width:450px;
+            padding: 85px;
+            position:absolute;
+            top:-60%;
+            left: 50%;
+            transform:translate(-50%,50%);
+            background:rgba(51, 153, 255,0.5); 
+            text-align: center;
+            }
+            h1,h3{
+                text-align: centre;
+                padding-left: 5%;
+                color: rgb(230, 46, 0);
+            }
+             .wrapper{
+                margin:0 auto;
+                max-width: 100%;
+                width: 98%;
+                background: rgb(245, 245, 240);
+                border:1px solid #878E63;
+            }
+             #logo{
+                width: 100px;
+                height: 100px;
+            }
+            nav ul{
+                list-style: none;
+                margin: 0;
+                padding-left: 300px;
+            }
+            nav ul li{
+                float:left;
+                border:1px solid rgb(230, 46, 0);
+                width:25%;
+            }
+            nav ul li a{
+                background: rgb(0, 0, 0);
+                display: block;
+                padding: 5% 12%;
+                font-weight: bold;
+                font-size: 18px;
+                color:rgb(230, 172, 0);
+                text-decoration: none;
+                text-align: center;
+            }
+            nav ul li a:hover, nav ul li .active a{
+                background-color:rgb(230, 172, 0) ;
+                color:rgb(0, 0, 0) ;
+            }
+            .res input[type = "text"],.res input[type="date"]{
+            border:0;
+            background: none;
+            display:block;
+            margin:20px auto;
+            text-align: center;
+            border:2px solid #ffff00;
+            padding: 10px 30px;
+            width:300px;
+            outline:none;
+            color: black;
+            border-radius: 30px;
+            transition: 0.25s;
+        }
+      
+             .res input[type = "submit"],.res input[type="reset"]{
+            border:0;
+            background: none;
+            display:block;
+            margin:20px auto;
+            text-align: center;
+            border:2px solid #cc0000;
+            padding: 10px 50px;
+            outline:none;
+            color: black;
+            border-radius: 30px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .res input[type = "submit"]:hover{
+            background: #cc0000;
+        }
+        .res input[type = "reset"]:hover{
+            background: #cc0000;
+        }
+        </style>
+    </head>
+    <body>
+       <div id="wrapper">
+            <header>
+                <a href="images/logo.png"><center><img id="logo" src="images/logo.png" alt="internship" title="internship"/></center></a> 
+                 <h1 style="font-size:100px;font-family: chiller;text-align: center;" >INTERNSHIP</h1>
+            </header>
+           
+            <nav>
+                <ul>
+                   <li class='active'><a href="account.jsp">Account Details</a></li>
+                   <li><a href="comp.jsp">Company Details</a></li> 
+                   <li><a href="adminresume.jsp">Resume Details</a></li>
+                </ul>
+            </nav> <br><br>
+            
+            <center>
+            <form class="res" action="add.jsp" method="post">
+                <div><h2><b>COMPANY</b></h2></div><br>
+            <div>
+                 Company Id:<input type="text" name="id" >
+            </div><br>
+            <div>
+                 Company Name:<input type="text" name="companyname" >
+            </div><br>
+            <div>
+                Location:
+                <input type="text" name="location" >
+            </div><br>
+            <div>
+                Duration:
+                <input type="text" name="duration" >
+            </div><br>
+            <div>
+                Stipend:
+                <input type="text" name="stipend" >
+            </div><br>
+           
+             <div>
+                 Available internships:
+                 <input type="text" name="interns">
+             </div><br>
+              <div>
+                 Perks:
+                 <input type="text" name="perk">
+             </div><br>
+             <div>
+                 Skills required:
+                 <input type="text" name="skill">
+             </div><br>
+             <div>
+                 Description:
+                 <input type="text" name="descr">
+             </div><br>
+            <input type="submit" name="Apply" value="apply">
+            <input type="reset">
+        </form> 
+            </center>
+       </div>
+    </body> 
+    
+</html>

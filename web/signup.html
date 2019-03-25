@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Internship</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function validate()
+            {
+                var gender=document.getElementById("male").value;
+                if(gender=="")
+                {
+                    document.getElementById("gerror").style.visibility='visible';
+                    document.getElementById("gerror").style.color="red";
+                    return false;
+                    
+                }
+            }
+        </script> 
+        <style>
+            body{
+                background: #DCDDDF url("bg.jpg");
+                margin: 0 auto;
+                padding: 0;
+                position: relative;
+            }
+            .container{
+                margin: 25px auto;
+                width: 900px;
+                position: relative;
+            }
+            #content{
+                position: relative;
+                width: 400px;
+                height: 350px;
+                margin: 0 auto;
+                padding: 25px 0 0;
+                background: #f9f9f9;
+                text-align: center;
+                box-shadow: 0 1px 0 #fff inset;
+                padding: 25px 0 0;
+                border: 1px solid #c4c6ca;
+            }
+            #content:before,
+            #content:after{
+                position: absolute;
+                content:"";
+                width: 100%;
+                height: 100%;
+                background: #f9f9f9;
+                border: 1px solid #c4c6ca;
+                box-shadow: 0 1px 0 #fff inset;
+                top: 0;
+            }
+            #content:before{
+                transform: rotate(6deg);
+                z-index: -1;
+            }
+            #content:after{
+                transform: rotate(-10deg);
+                z-index: -2;
+            }
+            #content h1{
+                font-family: sans-serif,Arial;
+                font-size: 25 px;
+                color: sky blue;
+                font-weight: bold;
+                letter-spacing: -0.05em;
+            }
+            #content h1:before,
+            #content h2:after{
+                content: "";
+                background: gray;
+                height: 1px;
+                position: absolute;
+                width: 10 px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <section id="content">
+                <h1>SIGN UP</h1>
+                <form method="post" action="signup.jsp">
+                    <div>
+                        <input type="text" name="username" placeholder="username"/>
+                    </div>
+                    <div>
+                        <input type="text" name="firstname" placeholder="firstname"/>
+                    </div>
+                    <div>
+                        <input type="text" name="lastname" placeholder="lastname"/>
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="password"/>
+                    </div>
+                    <div>
+                        <input type="password" name="cpassword" placeholder="confirm password"/>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="email"/>
+                    </div>
+                    <div>
+                        <input type="text" name="phnum" placeholder="phone number"/>
+                    </div>
+                    <div>
+                         <b>Gender:</b>
+                         Male<input type="radio" name="gender" id="male" value="male" checked/>Female<input type="radio" name="gender" id="Female" value="female" />
+                         <div id="gerror" style="visibility:hidden">no gender is entered</div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Get Started"/> 
+                    </div>
+                </form>    
+            </section>
+        </div>
+        
+    </body>
+</html>
